@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    vertical-align: baseline;
+    text-decoration: none;
+    list-style: none;
+    line-height: 1;
+}
+.ALL{
+    width: 100%;
+    height: auto;
+}
+header{
+    text-align: center;
+    padding: 10px 50px;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
+    gap: 40px;
+}
+nav ul li a{
+    color: black;
+    font-size: 30px;
+}
+nav ul li a:hover{
+    color: rgb(26, 255, 0);
+}
+nav ul li a img {
+    width: 120px;
+    height: auto;
+}
+
+article{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+footer{
+    width: 100%;
+    height: auto;
+    background-image: url('/IMAGE/img-footer.png');
+}
+h4 > strong {
+    color: rgb(8, 255, 41);
+}
+
+/* ////////////////////////////// header ////////////////////////////////// */
+/* ////////////////////////////// article ////////////////////////////////// */
+
+.main-article{
+    padding: 10px 150px;
+    height: auto;
+}
+.all-tieu-de{
+    padding: 10px 0px;
+    height: auto;
+
+}
+.all-tieu-de h1{ 
+    font-size: 30px;
+    padding: 30px 0px;
+
+}
+.all-tieu-de p { 
+    padding: 20px 0px 0px 0px;
+
+}
+.link{
+    padding: 20px 0px 0px 20px;
+
+}
+
+.link a {
+    font-size: 20px;
+    color: black;
+}
+
+
+
+
+
+
+
+/* ////////////////////////////// article ////////////////////////////////// */
+/* ////////////////////////////// footer ////////////////////////////////// */
+
+footer{
+    padding: 20px 20px 10px 20px;
+    background-color: #1c1c20;
+    display: flex;
+    flex-direction: column;
+}
+.all_col{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+    border-bottom: 2px solid white;
+    padding: 0px 0px 10px 0px;
+}
+.all_col > ul{
+    grid-column: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+.all_col ul{
+    list-style: none;
+}
+.all_col ul a{
+    color: rgb(136, 136, 136);
+    text-decoration: none;
+    display: block;
+    padding: 5px 0px;
+}
+.all_col ul a:hover{
+    color: white;
+}
+.name_col{
+    font-weight: bold;
+}
+.copyright{
+    text-align: center;
+    padding: 10px 0px 0px 0px;
+    color: white;
+}/* ////////////////////////////// footer ////////////////////////////////// */
+@media screen and (max-width: 768px){
+    
+    .all-footer{
+        flex-direction: column;
+    }
+    .tieu-de-5{
+        flex-direction: column;
+    }
+    .seach-newslatter{
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    
+}
+

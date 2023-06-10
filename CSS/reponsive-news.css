@@ -1,0 +1,15 @@
+@media screen and (max-width: 991px) {
+    .container_tintuc{
+        padding: 0px 10px;
+    }
+}
+@media screen and (max-width: 768px){
+    .tintuc{
+        grid-template-columns: auto auto;
+    }
+}
+@media screen and (max-width: 480px){
+    .tintuc{
+        grid-template-columns: auto;
+    }
+}

@@ -1,0 +1,532 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    vertical-align: baseline;
+    text-decoration: none;
+    list-style: none;
+    line-height: 1;
+}
+.ALL{
+    width: 100%;
+    height: auto;
+}
+header{
+    text-align: center;
+    padding: 20px 100px 400px 100px;
+    background-size: cover;
+    background-position: center;
+    background-image: url('/IMAGE/backgrond.png');
+}
+.backgroud img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+article{
+    height: auto;
+}
+footer{
+    width: 100%;
+    height: auto;
+    background-image: url('/IMAGE/img-footer.png');
+}
+
+/* ////////////////////////////// header ////////////////////////////////// */
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 40px;
+}
+nav ul li a{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
+nav ul li a:hover{
+    color: black;
+}
+.banner{
+    color: white;
+}
+.banner h1{
+    font-size: 60px;
+    padding: 50px 50px;
+}
+.banner span{
+    display: block;
+    width: 400px;
+    margin: auto;
+    padding-bottom: 20px;
+}
+.seach{
+    width: 350px;
+    height: 40px;
+    margin: auto;
+    display: flex;
+    background-color: white;
+    padding: 5px;
+    border-radius: 50px;
+}
+.seach input{
+    width: 90%;
+    height: 100%;
+    border: none;
+    text-indent: 10px;
+    border-radius: 40px;
+}
+.seach input:focus{
+    outline: none;
+}
+.seach button{
+    width: 9%;
+    background-color: #25eca0;
+    background-image: linear-gradient(90deg, #25eca0 46%, #0b9ae8 100%);    
+    color: white;
+    height: 100%;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.seach button:active{
+    opacity: 0.6;
+}
+
+/* ////////////////////////////// header ////////////////////////////////// */
+/* ////////////////////////////// article ////////////////////////////////// */
+.main-article{
+    margin: auto;
+    background-color: white;
+    width: 100%;
+    height: auto;
+}
+
+.tieu-de-2{
+    width: 100%;
+    height: auto;
+}
+.all-box{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items:center;
+    gap: 220px;
+    padding: 20px 0px 0px 0px; 
+}
+.tieu-de-2 .box-1{
+    display: flex;
+}
+.tieu-de-2 .box-1 .text-1{
+    padding: 5px 5px;
+}
+.tieu-de-2 .box-1 img{
+    width: 60px;
+    height: 60px;
+}
+.tieu-de-2 .box-1 p{
+    padding-top: 10px;
+    font-size: 13px;
+}
+.best-seller{
+    width: 100%;
+    display: flex;
+    padding: 150px 0px 40px 0px;
+    gap: 30px;
+    justify-content: center;
+}
+.text-best-seller{
+    font-size: 30px;
+    width: 300px;   
+    height: 100px;
+}   
+.text-best-seller p {
+    font-size: 16px;
+}
+.main-khung-best-seller{
+    display: flex;
+    gap: 25px;
+}
+.khung-best-seller{
+    width: 270px;
+    height: auto;
+    background-color: rgb(193, 208, 228, 1);
+    position: relative;
+    border-radius: 40px;
+}
+.img-best-seller{
+    position: absolute;
+    top: -120px;
+    left: 0px;
+}
+.img-best-seller img {
+    width: 270px;
+
+}
+.text-gia{
+    width: 270px;
+    height: auto;
+    background-color: white;
+    margin-top: 180px;
+    padding: 30px;
+    border-radius: 40px;
+    box-shadow:  0px 0px 1px black;
+    font-size: 16px;
+}
+.text-gia .gia{
+    font-size: 20px;
+    justify-content: space-between;
+    display: flex;
+}
+.text-gia .gia a{
+    font-size: 35px;
+}
+.text-gia .gia span{
+    padding-top: 10px;
+}
+.tieu-de-3 {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.interior{
+    margin: auto;
+    width: 100%;
+    height: auto;
+}
+.tieu-de-3 .interior  h1 {
+    font-size: 40px;
+    padding-bottom: 10px;
+}
+.khung-interior{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+
+}
+
+.right-img-interior img{
+    display: flex;
+    margin: 30px 30px 30px 0px;
+    
+}
+.right-img-interior{
+    position: relative;
+    
+}
+/* .right-img-interior::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    width: 95%;
+    height: 48.6%;
+    background-color: rgba(65, 33, 33, 0.223); Màu nền mờ
+    backdrop-filter: blur(1px); Độ mờ
+    z-index: 0; Đảm bảo lớp nền mờ chồng lên phía sau
+    border-radius: 34px;
+}     */
+.text-right-img-interior {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.text-right-img-interior h1{
+    color: white;
+    font-size: 44px;
+
+}
+.left-img-interior img{
+    width: 550px;
+    height: 630px;
+    display: flex;
+    margin-top: 30px;
+}
+.tieu-de-4{
+    width:80%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    padding: 30px 0px;
+}
+.text-plants{
+    width: 50%;
+    height: auto;
+}
+.text-plants-top h1{
+    font-size: 40px;
+    display: flex;
+    
+}
+.text-plants-top p{
+    padding: 10px 0px;
+}
+.text-plants-bottom{
+    margin-top: 50px;
+}
+.ic-plants {
+    display: flex;
+    padding: 10px 20px 20px 0px;
+    gap: 10px;
+}
+.text-ic-plants p{
+    margin-top: 5px;
+}
+.ic-plants img {
+    width: 50px;
+    height: 50px;
+}
+.img-plants{
+    width: 50%;
+    height: 600px;
+}
+.img-plants img {
+    width: 100%;
+    height: 100%;
+    
+}
+
+/* ////////////////////////////// article ////////////////////////////////// */
+/* ////////////////////////////// footer ////////////////////////////////// */
+
+footer{
+    padding: 20px 20px 10px 20px;
+    background-color: #1c1c20;
+    display: flex;
+    flex-direction: column;
+}
+.all_col{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+    border-bottom: 2px solid white;
+    padding: 0px 0px 10px 0px;
+}
+.all_col > ul{
+    grid-column: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+.all_col ul{
+    list-style: none;
+}
+.all_col ul a{
+    color: rgb(136, 136, 136);
+    text-decoration: none;
+    display: block;
+    padding: 5px 0px;
+}
+.all_col ul a:hover{
+    color: white;
+}
+.name_col{
+    font-weight: bold;
+}
+.copyright{
+    text-align: center;
+    padding: 10px 0px 0px 0px;
+    color: white;
+}
+
+
+
+/* ////////////////////////////// footer ////////////////////////////////// */
+@media screen and (max-width: 768px) {
+    header{
+        text-align: center;
+        padding: 20px 100px 400px 100px;
+        background-size: cover;
+        background-position: center;
+        background-image: url('/IMAGE/backgrond.png');
+    }
+    .tieu-de-5{
+        flex-direction: column;
+    }
+    
+    .tieu-de-2{
+        flex-direction: column;
+        align-items: center;
+    }
+    .all-box{
+        gap: 30px;
+    }
+    .best-seller{
+        padding-top: 50px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .best-seller{
+        display: flex;
+    }
+    .main-khung-best-seller{
+        display: flex;
+        width: 90%;
+        height: auto;
+    }
+    .khung-best-seller{
+        margin-top: 100px;
+        width: 30%;
+        height: 330px;
+        position: relative;
+    }
+    .img-best-seller{
+        position: absolute;
+        top: -70px;
+        left: 0;
+
+    }
+    .img-best-seller img{
+        width: 100%;
+        height: auto;
+    }
+    .text-gia{
+        width: 100%;
+        height: auto;
+    }
+
+    .text-best-seller{
+        flex-direction: column;
+        text-align: center;
+    }
+    .khung-interior{
+        flex-direction: column;
+        align-items: center;
+    }
+    .tieu-de-3{
+        flex-direction: column;
+    }
+
+    .tieu-de-4{
+        flex-direction: column;
+        align-items: center;
+    }
+    .text-plants{
+        width: 100%;
+        height: auto;
+        padding: 10px 0px ;
+    }
+    .text-plants-top {
+        justify-content: center;
+        text-align: center;
+    }
+    .text-plants-top h1{
+        justify-content: center;
+        text-align: center;
+    }
+    .img-plants{
+        width: 100%;
+        height: auto;
+    }
+    .seach-newslatter{
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    nav ul li a {
+        font-size: 17px;
+        font-weight: 600;
+    }
+}
+
+/* ================================================================================================ */
+@media screen and (max-width: 1024px){
+
+    .tieu-de-5{
+        flex-direction: column;
+    }
+    
+    .tieu-de-2{
+        flex-direction: column;
+        align-items: center;
+    }
+    .all-box{
+        gap: 30px;
+    }
+    .best-seller{
+        padding-top: 50px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .best-seller{
+        display: flex;
+    }
+    .main-khung-best-seller{
+        display: flex;
+        width: 90%;
+        height: auto;
+    }
+    .khung-best-seller{
+        margin-top: 100px;
+        width: 30%;
+        height: 330px;
+        position: relative;
+    }
+    .img-best-seller{
+        position: absolute;
+        top: -70px;
+        left: 0;
+
+    }
+    .img-best-seller img{
+        width: 100%;
+        height: auto;
+    }
+    .text-gia{
+        width: 100%;
+        height: auto;
+    }
+
+    .text-best-seller{
+        flex-direction: column;
+        text-align: center;
+    }
+    .khung-interior{
+        flex-direction: column;
+        align-items: center;
+    }
+    .khung-interior img{
+        width: 100%;
+        height: auto;
+    }
+    .text-right-img-interior {
+        text-align: center;
+    
+    }
+    .tieu-de-3{
+        flex-direction: column;
+    }
+
+    .tieu-de-4{
+        flex-direction: column;
+        align-items: center;
+    }
+    .text-plants{
+        width: 100%;
+        height: auto;
+        padding: 10px 0px ;
+    }
+    .text-plants-top {
+        justify-content: center;
+        text-align: center;
+    }
+    .text-plants-top h1{
+        justify-content: center;
+        text-align: center;
+    }
+    .img-plants{
+        width: 100%;
+        height: auto;
+    }
+    .seach-newslatter{
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    
+}
