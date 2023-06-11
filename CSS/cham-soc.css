@@ -21,7 +21,9 @@ nav ul{
     justify-content: center;
     list-style: none;
     align-items: center;
-    gap: 40px;
+}
+.navbar ul li {
+    padding: 0px 20px;
 }
 nav ul li a{
     color: black;
@@ -47,6 +49,59 @@ footer{
 }
 h4 > strong {
     color: rgb(8, 255, 41);
+}
+.menu, .drop-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.drop-menu{
+    border: 1px solid rgba(26, 255, 0, 0.37);
+}
+.menu-item {
+    display: inline-block;
+    position: relative;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.drop-menu {
+    display: none;
+
+    position: absolute;
+    background-color: #fff;
+    min-width: 242px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+}
+
+.drop-menu-item {
+    width: 100%;
+    text-align: start;
+
+}
+.drop-menu-item a {
+    padding: 5px 0px;
+    font-size: 17px;
+    border-bottom: 1px solid rgba(26, 255, 0, 0.363);
+
+}
+.drop-menu .drop-menu-item:last-child a{
+    border-bottom: none;
+}
+.drop-menu-item:hover {
+    background-color: #b6b6b61b;
+}
+
+.drop-menu-item a {
+    color: #555;
+}
+
+.menu-item:hover .drop-menu {
+    display: block;
 }
 
 /* ////////////////////////////// header ////////////////////////////////// */
@@ -79,7 +134,27 @@ h4 > strong {
     font-size: 20px;
     color: black;
 }
-
+.link a:hover{
+    color: rgb(8, 255, 41);
+}
+.tieu-de-2{
+    padding: 30px 0px;
+}
+.tieu-de-2 h1{
+    font-size: 25px;
+}
+.tieu-de-2 h3{
+    padding: 10px 0px;
+}
+.tieu-de-2 p {
+    padding: 10px 0px;
+}
+.tieu-de-2  .dinh-vu {
+    text-align: center;
+}
+.tieu-de-2 .cham-cay{
+    text-align: center;
+}
 
 
 
@@ -127,8 +202,16 @@ footer{
     padding: 10px 0px 0px 0px;
     color: white;
 }/* ////////////////////////////// footer ////////////////////////////////// */
+/* ========================================================== */
 @media screen and (max-width: 768px){
-    
+    .dinh-vu img{
+        width: 100%;
+        height: auto;
+    }
+    nav ul li a {
+        font-size: 20px;
+        font-weight: 600;
+    }
     .all-footer{
         flex-direction: column;
     }
@@ -140,6 +223,13 @@ footer{
         height: auto;
         text-align: center;
     }
+    .main-article{
+        padding: 10px ;
+    }
+    .all-tieu-de{
+        padding: 10px 150px;
+    }
+
     
 }
 
