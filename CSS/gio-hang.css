@@ -1,4 +1,4 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,44 +8,109 @@
     list-style: none;
     line-height: 1;
 }
-
-.container{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.ALL{
+    width: 100%;
+    height: auto;
 }
-h4 > strong {
-    color: rgb(8, 255, 41);
-}
-
-/* ===============================HEADER============================ */
 header{
+    text-align: center;
+    padding: 10px 50px;
     display: flex;
     flex-direction: column;
     padding: 10px 50px;
 }
-.logo_nav_search{
+nav ul{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    list-style: none;
     align-items: center;
-    padding: 20px;
-    /* background-color: #373841; */
-    background-color: #294402;
 }
-.logo_nav{
+.navbar ul li {
+    padding: 0px 20px;
+}
+nav ul li a{
+    color: black;
+    font-size: 30px;
+}
+nav ul li a:hover{
+    color: rgb(45,152,66);
+}
+nav ul li a img {
+    width: 120px;
+    height: auto;
+}
+
+article{
+    width: 100%;
+    height: auto;
     display: flex;
-    align-items: center;
-    gap: 40px;
 }
-.logo{
-    font-weight: bold;
-    padding: 27px 10px;
-    font-size: 14px;
-    border-radius: 50%;
-    text-transform: uppercase;
-    animation: flicker 0.1s linear infinite;
-    color: white;
+footer{
+    width: 100%;
+    height: auto;
+    background-image: url('/IMAGE/img-footer.png');
 }
+h4 > strong {
+    color: rgb(45,152,66);
+}
+.menu, .drop-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.drop-menu{
+    border: 1px solid rgb(45,152,66);
+    ;
+}
+.menu-item {
+    display: inline-block;
+    position: relative;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.drop-menu {
+    display: none;
+
+    position: absolute;
+    background-color: #fff;
+    min-width: 242px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+}
+
+.drop-menu-item {
+    width: 100%;
+    text-align: start;
+
+}
+.drop-menu-item a {
+    padding: 5px 0px;
+    font-size: 17px;
+    border-bottom: 1px solid  rgb(45,152,66);
+    ;
+
+}
+.drop-menu .drop-menu-item:last-child a{
+    border-bottom: none;
+}
+.drop-menu-item:hover {
+    background-color: #b6b6b61b;
+}
+
+.drop-menu-item a {
+    color: #555;
+}
+
+.menu-item:hover .drop-menu {
+    display: block;
+}
+
+/* ===============================HEADER============================ */
+
 @keyframes flicker{
     0%{border: 5px solid rgb(234, 0, 255);}
     25%{border: 5px solid rgb(13, 0, 254);}
@@ -57,14 +122,13 @@ nav ul{
     justify-content: center;
     align-items: center;
     list-style: none;
-    gap: 40px;
 }
 nav ul li a{
     color: rgb(0, 0, 0);
     font-size: 30px;
 }
 nav ul li a:hover{
-    color: rgb(0, 255, 55);
+    color: rgb(45,152,66);
 }
 nav ul li a img {
     width: 120px;
@@ -95,7 +159,7 @@ nav ul li a img {
     border-end-end-radius: 3px;
     border-top-right-radius: 3px;
     border: none;
-    background-color: #5470fa;
+    background-color:rgb(45,152,66);
     background-image: linear-gradient(315deg, #5470fa 0%, #C850C0 46%, #ff0015 100%);
     color: white;
     cursor: pointer;
@@ -143,7 +207,7 @@ section{
     border: none;
     border-radius: 3px;
     color: white;
-    background-color: #5470fa;
+    background-color: rgb(45,152,66);
     background-image: linear-gradient(315deg, #5470fa 0%, #C850C0 46%, #ff0015 100%);    
 }
 .slide button:hover{
@@ -185,7 +249,7 @@ section{
     align-items: center;
 }
 .check .continue a{
-    color: #00a6ed;
+    color: rgb(45,152,66);
     /* background-color: red; */
     padding: 10px 15px;
     text-decoration: none;
@@ -220,7 +284,7 @@ span.pay{
     color: #194158;
 }
 span.pal{
-    color: #3785bc;
+    color: rgb(45,152,66);
 }
 /* --- */
 button.check_out{
@@ -288,7 +352,7 @@ button.check_out{
 .infor .name_product{
     font-size: 20px;
     font-weight: bold;
-    color: #00a6ed;
+    color:rgb(45,152,66);
 }
 .infor > div span{
     display: block;
@@ -301,7 +365,7 @@ button.check_out{
     font-weight: bold;
 }
 .edit a{
-    color: #00a6ed;  
+    color:rgb(45,152,66);  
     text-decoration: none;
 }
 /* -------adjust-------- */
@@ -344,7 +408,7 @@ button.check_out{
     display: block;
 }
 .see_details a{
-    color: #00a6ed;
+    color:rgb(45,152,66);
     text-decoration: none;
     font-weight: bold;
 }
@@ -369,7 +433,7 @@ button.check_out{
     height: 32px;
     border: none;
     color: white;
-    background-color: #00a6ed;
+    background-color:rgb(45,152,66);
     cursor: pointer;
 }
 .code_sales button:hover{
@@ -408,7 +472,7 @@ button.check_out{
     gap: 10px;
 }
 .shipping div span{
-    color: #00a6ed;
+    color:rgb(45,152,66);
     cursor: pointer;
     font-weight: bold;
 }
