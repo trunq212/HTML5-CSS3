@@ -225,3 +225,32 @@ footer{
     padding: 10px 0px 0px 0px;
     color: white;
 }
+
+
+@media screen and (max-width: 1024px) {
+    .container_tintuc{
+        padding: 0px 10px;
+    }
+    nav ul li a {
+        font-size: 20px;
+        font-weight: 600;
+    }
+}
+@media screen and (max-width: 768px){
+    .tintuc{
+        grid-template-columns: auto auto;
+    }
+    nav ul li a {
+        font-size: 20px;
+        font-weight: 600;
+    }
+}
+@media screen and (max-width: 480px){
+    .tintuc{
+        grid-template-columns: auto;
+    }
+    nav ul li a {
+        font-size: 20px;
+        font-weight: 600;
+    }
+}
