@@ -13,8 +13,9 @@
     height: auto;
 }
 header{
-    text-align: center;
-    padding: 10px 50px;
+    padding: 10px 50px; 
+    
+
 }
 nav ul{
     display: flex;
@@ -25,10 +26,7 @@ nav ul{
 .navbar ul li {
     padding: 0px 20px;
 }
-nav ul li a{
-    color: black;
-    font-size: 30px;
-}
+
 nav ul li a:hover{
     color: rgb(45,152,66);
 }
@@ -38,9 +36,8 @@ nav ul li a img {
 }
 
 article{
-    width: 100%;
+    padding: 20px 150px;
     height: auto;
-    display: flex;
 }
 footer{
     width: 100%;
@@ -66,7 +63,6 @@ h4 > strong {
 
 .menu-item a {
     text-decoration: none;
-    color: black;
     display: block;
 }
 
@@ -105,96 +101,111 @@ h4 > strong {
 .menu-item:hover .drop-menu {
     display: block;
 }
-.container_tintuc h1{
-    font-size: 40px;
-    color: rgb(45,152,66);
-    padding: 20px 0px ;
-}
-/* ////////////////////////////// header ////////////////////////////////// */
-/* ////////////////////////////// article ////////////////////////////////// */
 
-body{
-    font-size: 16px;
+
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
 }
-a{
-    text-decoration: none;
+nav ul li a{
+    color: black;
+    font-size: 30px;
+  
 }
-.container_tintuc h4{
-    padding: 20px 0px;
-}
-.container_tintuc{
-    padding: 0px 150px;
-}
-.tintuc{
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    gap: 20px;
-}
-.box_tintuc{
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto;
-    box-shadow: 0px 0px 5px 1px rgb(182, 182, 182);
-}
-.box_tintuc:hover{
-    box-shadow: 0px 0px 10px 2px gray;
-    transition: 0.5s;
-}
-.box_tintuc:hover:hover a.buy{
-    opacity: 1;
-    transition: 0.5s;
-}
-.box_tintuc img:hover{
-    filter: blur(1px);
-}
-.box_tintuc img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.image_tintuc{
-    grid-column: 1/2;
-    grid-row: 1/3;
-    position: relative;
-}
-a.buy{
-    position: absolute;
-    display: block;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    color: white;
-    font-weight: bold;
-    background-color: black;
-    width: 100%;
+
+/* //////////////////////////////////// */
+
+
+h2{
     text-align: center;
-    padding: 20px 0px;
-    opacity: 0;
 }
-.content_tintuc{
-    grid-column: 1/2;
-    grid-row: 3/4;
-    padding: 20px;
+form{
+    width: 300px;
+    height: auto;
+    margin: auto;
+    padding: 30px;
+    margin-top: 50px;
+    border: 2px solid gray;
 }
-.content_tintuc span{
+form input{
     display: block;
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid gray;
+    margin: 7px 0px;
 }
-h3.tieude{
-    font-size: 20px;
+form input:focus{
+    outline: none;
 }
-h3.tieude a{
-    color: #5ba503;
-    text-decoration: none;
-    font-size: 21px;
-    padding: 10px 0px;
+
+button{
     display: block;
+    height: 40px;
+    background-color: blue;
+    color: white;
+    border: none;
+    font-weight: bold;
+    margin: 5px 0px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
 }
-/* ========================================== */
+.check_pass{
+    padding-block: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.check_pass input{
+    width: 15px;
+    height: 15px;
+}
+.check_pass label{
+    font-size: 13px;
+}
+.next{
+    display: flex;
+    justify-content: space-between;
+}
+.next a{
+    font-size: 13px;
+    color: blue;
+}
+.app a{
+    font-size: 30px;
+    color: black;
+}
+.app{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 25px 0px 0px 0px;
+}
+.line_or{
+    display: grid;
+    text-align: center;
+    align-items: center;
+    color: gray;
+    padding: 20px 0px 0px 0px;
+    grid-template-columns: auto 35% auto;
+}
+.line{
+    height: 1px;
+    background-color: gray;
+}
+
+
+
 footer{
     padding: 20px 20px 10px 20px;
     background-color: #1c1c20;
     display: flex;
     flex-direction: column;
+    margin-top: 100px;
 }
 .all_col{
     display: grid;
@@ -228,32 +239,8 @@ footer{
     padding: 10px 0px 0px 0px;
     color: white;
 }
+.khung-interior img:hover{
+    filter: blur(2px);
 
+}
 
-@media screen and (max-width: 1024px) {
-    .container_tintuc{
-        padding: 0px 10px;
-    }
-    nav ul li a {
-        font-size: 20px;
-        font-weight: 600;
-    }
-}
-@media screen and (max-width: 768px){
-    .tintuc{
-        grid-template-columns: auto auto;
-    }
-    nav ul li a {
-        font-size: 20px;
-        font-weight: 600;
-    }
-}
-@media screen and (max-width: 480px){
-    .tintuc{
-        grid-template-columns: auto;
-    }
-    nav ul li a {
-        font-size: 20px;
-        font-weight: 600;
-    }
-}

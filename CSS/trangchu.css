@@ -29,11 +29,7 @@ nav ul{
 .navbar ul li {
     padding: 0px 20px;
 }
-nav ul li a{
-    color:rgb(45,152,66);
 
-    font-size: 30px;
-}
 nav ul li a:hover{
     color: rgb(45,152,66);
 }
@@ -131,6 +127,20 @@ nav ul li a{
 .banner h1{
     font-size: 60px;
     padding: 50px 50px;
+    animation: trung 2s linear infinite;
+}
+@keyframes trung {
+    0%{color: #00ff15;}
+    10%{color: #00ff55;}
+    30%{color: #00ff55;}
+    45%{color: #00ff55;}
+    60%{color: #00ff9d;}
+    70%{color: #00a2ff;}
+    90%{color: #0073ff;}
+    100%{color: #009dff;}
+    /* from {color: #25eca0;}
+    to {color: #0b9ae8;} */
+
 }
 .banner span{
     display: block;
@@ -407,6 +417,10 @@ footer{
     text-align: center;
     padding: 10px 0px 0px 0px;
     color: white;
+}
+.khung-interior img:hover{
+    filter: blur(2px);
+
 }
 
 
